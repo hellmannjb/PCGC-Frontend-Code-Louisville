@@ -2,17 +2,25 @@
 <html>
     <head>
         <title>Paradise Cove GC - Book a Teetime</title>
+        <link href="ParadiseCove.css" rel="stylesheet">
     </head>
     <body>
-        <header> 
-            <h1>Paradise Cove GC</h1>
-            <p>Established 2020</p>
-            <nav>
-                <ul>
-                    <li><a href="ParadiseCove.html">Home</a></li>
-                    <li>Book a Teetime</li>
-                </ul>
-            </nav>
-        </header>
+        <form action="index.html" method="post">
+            <h1>Book your Teetime</h1>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="use_name">
+
+            <label for="mail">Email:</label>
+            <input type="email" id="mail"     name="user_email">
+
+            <label for="date">Date</label>
+            <input type="date" id="date" name="Teetime_Date">
+
+            <label for="time">Time</label>
+            <input type="time" id="time" name="Teetime_time">
+            
+            <button type="submit">Submit</button>
+        </form>
     </body>
 </html>
