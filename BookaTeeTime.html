@@ -19,20 +19,20 @@
             </nav>
         </header>
 
-        <form action="index.html" method="post">
+        <form name ="teetime-form" onsubmit="return validateForm()" action="BookaTeeTime.html" method="post">
             <h1>Book your Teetime</h1>
 
             <label for="name">Name:</label>
-            <input type="text" id="name" name="use_name">
+            <input type="text" id="name" name="user_name" required="required">
 
             <label for="mail">Email:</label>
-            <input type="email" id="mail"     name="user_email">
+            <input type="email" id="mail"  name="user_email" required="required">
 
             <label for="date">Date:</label>
-            <input type="date" id="date" name="Teetime_Date">
+            <input type="date" id="date" name="Teetime_Date" required="required">
 
             <label for="time">Time:</label>
-            <input type="time" id="time" name="Teetime_time">
+            <input type="time" id="time" name="Teetime_time" required="required">
             
             <button type="submit">Submit</button>
         </form>
